@@ -123,6 +123,7 @@ main {
             margin-bottom: 30px;
         }
         .tableWrapper {
+            width: 100%;
             .tableHeader {
                 border-bottom: 2px solid #c4c4c4;
                 padding: 10px 0px;
@@ -141,6 +142,7 @@ main {
             }
         }
         .table {
+            width: 100%;
             background-color: #f4f4f4;
             padding: 30px 0 0 30px;
             .tableTitle {
@@ -160,12 +162,19 @@ main {
                     }
                 }
             }
+            .scrollTable {
+                overflow-x: auto;
+                width: 100%;
+                max-width: 100%;
+            }
             table {
+                overflow-x: scroll;
                 font-size: 19px;
                 border-collapse: collapse;
                 border: 1px solid pink;
                 background-color: #fff;
-                width: 100%;
+                width: auto;
+                min-width: 100%;
                 thead {
                     td {
                         font-weight: bold;
@@ -180,10 +189,45 @@ main {
     }
 }
 
-@media (max-width:1200px) and (min-width:0px){
-    
+/* responsivlik */
+@media (min-width:0px) and (max-width:1200px){
+    .sidebar{
+        width: 30%;
+    }
+    main{
+        flex-direction: column;
+        width: 70%;
+    }
 }
-
-@media (max-width:768px) and (min-width:0px){
+@media (min-width:0px) and (max-width:1200px){
+  
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column !important ;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+        width: 100%;
+        position: static;
+    }
+}
+@media (min-width: 0px) and (max-width: 650px){
+    .searchNav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .tableWrapper {
+        .tableHeader {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin: 0 !important;
+            }
+        }
+    }
     
 }
