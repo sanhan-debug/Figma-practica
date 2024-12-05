@@ -6,20 +6,21 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
-     <link rel="stylesheet" href="./desktop-6.css">
-    <title>Desktop-6</title>
+     <link rel="stylesheet" href="./assets/staff.css">
+    <title>Desktop-3</title>
 </head>
 <body>
     <!-- sidebar -->
+<div class="container">
     <div class="sidebar">
         <div class="admin">
             <div class="head-text">
-                <img src="./image/Frame 1.png" alt="">
+                <img src="./assets/image/Frame 1.png" alt="">
             </div>
             <div class="image">
-                <img src="./image/download 1 1.png" alt="...">
+                <img src="./assets/image/download 1 1.png" alt="...">
             </div>
-            <img src="./image/Admin.png" alt="">
+            <img src="./assets/image/Admin.png" alt="">
         </div>
         <div class="lists">
             <ul>
@@ -28,8 +29,8 @@
                 <li>Staff</li>
                 <li>Academics</li>
                 <li>Performance</li>
-                <li>Collect Fees</li>
                 <li>Announcement</li>
+                <li>Collect Fees</li>
                 <li>Setup</li>
                 <li>Change Password</li>
             </ul>
@@ -45,7 +46,7 @@
                 <div class="user">
                     <i class="fa-regular fa-bell"></i>
                     <div class="userName">
-                        <img src="./image/33fe647a46f9bf668322f8c1d94ed937.png">
+                        <img src="./assets/image/33fe647a46f9bf668322f8c1d94ed937.png">
                         <span>IbukunOluwa <i class="fa-solid fa-chevron-down"></i></span>
                     </div>
                 </div>
@@ -53,11 +54,11 @@
         </section>
         <!-- homename -->
         <section id="homeName">
-            <div class="homeName"><b>Home</b> <i class="fa-solid fa-chevron-right"></i> Students</div>
+            <div class="homeName"><b>Home</b> <i class="fa-solid fa-chevron-right"></i> Staffs</div>
         </section>
         <!-- student page -->
         <section id="studentsPage">
-            <div class="title">Announcement</div>
+            <div class="title">Staffs</div>
             <div class="tableWrapper">
                 <div class="tableHeader">
                     <span class="allStudents"><i class="fa-regular fa-building"></i> All Students</span>
@@ -65,11 +66,24 @@
                     <span class="uploadStudents"><i class="fa-solid fa-cloud-arrow-up"></i> Upload Students</span>
                 </div>
                 <div class="table">
-                   
+                    <div class="tableTitle">
+                        <div class="registered">
+                            <span class="allStudents"><i class="fa-regular fa-building"></i> Registered Students</span>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="showEnteries">
+                            <span>Show</span>
+                            <select>
+                                <option value="100" disabled selected>100</option>
+                            </select>
+                            <span>enteries</span>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
         </section>
     </main>
+</div>
 </body>
 </html>
