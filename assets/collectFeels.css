@@ -38,7 +38,7 @@
         ul li {
             padding: 15px 20px;
 
-            &:nth-child(6) {
+            &:nth-child(7) {
                 background-color: #FFB800;
             }
         }
