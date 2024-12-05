@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icon awesome -->
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./desktop-2.css">
-    <title>Desktop-2</title>
+    <!-- css -->
+     <link rel="stylesheet" href="./desktop-6.css">
+    <title>Desktop-6</title>
 </head>
 <body>
-<div class="container">
+    <!-- sidebar -->
     <div class="sidebar">
         <div class="admin">
             <div class="head-text">
@@ -27,14 +28,17 @@
                 <li>Staff</li>
                 <li>Academics</li>
                 <li>Performance</li>
-                <li>Performance</li>
                 <li>Collect Fees</li>
+                <li>Announcement</li>
                 <li>Setup</li>
                 <li>Change Password</li>
             </ul>
         </div>
     </div>
+
+    <!-- main -->
     <main>
+        <!-- header -->
         <section id="header">
             <div class="searchNav">
                 <input type="text" placeholder='Search...'>
@@ -47,47 +51,25 @@
                 </div>
             </div>
         </section>
+        <!-- homename -->
         <section id="homeName">
-            <div class="homeName"><b>Home</b> <i class="fa-solid fa-chevron-right"></i> DashBoard</div>
+            <div class="homeName"><b>Home</b> <i class="fa-solid fa-chevron-right"></i> Students</div>
         </section>
-        <section id="myCards">
-            <div class="card students">
-               <div class="text">
-                <span>Students</span>
-                <span>100</span>
-               </div>
-                <div class="info">
-                    <span>More Info</span>
-                    <span><i class="fa-solid fa-circle-info"></i></span>
+        <!-- student page -->
+        <section id="studentsPage">
+            <div class="title">Announcement</div>
+            <div class="tableWrapper">
+                <div class="tableHeader">
+                    <span class="allStudents"><i class="fa-regular fa-building"></i> All Students</span>
+                    <span class="addStudent"><i class="fa-solid fa-plus"></i> Add Student</span>
+                    <span class="uploadStudents"><i class="fa-solid fa-cloud-arrow-up"></i> Upload Students</span>
                 </div>
-            </div>
-            <div class="card teachers">
-                <div class="text">
-                    <span>Teacher</span>
-                    <span>50</span>
-                   </div>
-                <div class="info">
-                    <span>More Info</span>
-                    <span><i class="fa-solid fa-circle-info"></i></span>
+                <div class="table">
+                   
+                    
                 </div>
-            </div>
-            <div class="card semester">
-                <div class="text">
-                    <span>Semester</span>
-                    <span>3</span>
-                   </div>
-                <div class="info">
-                    <span>More Info</span>
-                    <span><i class="fa-solid fa-circle-info"></i></span>
-                </div>
-            </div>
-        </section>
-        <section id="chart">
-            <div class="image">
-                <img src="./image/Line chart.png" alt="">
             </div>
         </section>
     </main>
-</div>
 </body>
 </html>
