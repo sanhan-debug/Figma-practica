@@ -10,6 +10,9 @@
 
 .sidebar {
     width: 15%;
+    position: fixed;
+    left: 0;
+    top: 0;
 
     .admin {
         display: flex;
@@ -150,6 +153,7 @@ main {
 @media (min-width:0px) and (max-width:1200px){
     .sidebar{
         width: 30%;
+        position: fixed;
     }
     main{
         flex-direction: column;
@@ -161,6 +165,7 @@ main {
    
     .sidebar{
         width: 100%;
+        position: static;
     }
     main{
         flex-direction: column;
