@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+
+}
+
+.sidebar {
+    width: 15%;
+
+    .admin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(226, 221, 176, 1);
+
+        .head-text {
+            background-color: #FFB800;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .lists {
+        margin: 50px 0;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 600;
+
+        ul li {
+            padding: 15px 20px;
+
+            &:nth-child(3) {
+                background-color: #FFB800;
+            }
+        }
+    }
+}
+
+main {
+    padding: 30px 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85%;
+    #header {
+
+        .searchNav {
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+
+            input {
+                border-radius: 8px;
+                padding: 7px 15px;
+                background-color: #f4f4f4;
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                .fa-bell {
+                    padding: 7px;
+                    border-radius: 7px;
+                    background-color: #f4f4f4;
+                    font-size: 20px;
+                }
+
+                .userName {
+                    align-items: center;
+                    display: flex;
+                    background-color: #f4f4f4;
+                    border-radius: 20px 0 0 20px;
+
+                    img {
+                        border-radius: 50%;
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    span {
+                        padding: 0 5px;
+                        font-weight: bold;
+
+                        .fa-chevron-down {
+                            font-size: 10px;
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+    }
+    #homeName {
+        margin: 30px 0;
+        background-color: #f4f4f4;
+        padding: 15px 25px;
+        .homeName {
+            i {
+                font-size: 11px;
+                margin: 0px 5px;
+            }
+        }
+    }
+    #studentsPage {
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .tableWrapper {
+            .tableHeader {
+                border-bottom: 2px solid #c4c4c4;
+                padding: 10px 0px;
+                background-color: #dfdfdf;
+                span {
+                    padding: 10px 30px;
+                    background-color: #e8e8e8;
+                    margin-left: -4px;
+                    font-weight: bold;
+                }
+                span:nth-child(1) {
+                    margin: 0;
+                    border-top: 2px solid #FFB800;
+                    background-color: #f4f4f4;
+                }
+            }
+        }
+        .table {
+            background-color: #f4f4f4;
+            padding: 30px 0 0 30px;
+           height: 500px;
+            .tableTitle {
+                width: 50%;
+                .registered {
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .showEnteries {
+                    margin-bottom: 10px;
+                    select {
+                        padding: 5px;
+                        background-color: #fff;
+                        border-radius: 5px 0 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Responsivlik */
+@media (min-width:0px) and (max-width:1200px){
+    .sidebar{
+        width: 30%;
+    }
+    main{
+        flex-direction: column;
+        width: 70%;
+    }
+}
+@media (min-width:0px) and (max-width:768px){
+  
+   
+    .sidebar{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+        width: 100%;
+        position: static;
+    }
+}
