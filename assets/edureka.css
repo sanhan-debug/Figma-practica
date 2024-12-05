@@ -1,10 +1,19 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  
 }
 
 body {
+
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* background-image: url("unsplash_omeaHbEFlN4.jpg"); */
+  background-repeat: no-repeat center center/cover;
+  width: 100%;
+  /* height: 100%; */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-image: url("./image/unsplash_omeaHbEFlN4.jpg");
@@ -14,43 +23,51 @@ body {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 10px 20px;
-    border-bottom: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 2px solid whitesmoke;
 }
 
 .navbar .logo {
-    font-size: 2em;
-    font-weight: bold;
-    color: black;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+  #menu{
+    display: none;
+    color: black;
+
+  }}
 
 .navbar ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5em;
+   
+    
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
 }
 
 .login-btn {
-    background: yellow;
-    color: black;
-    border: none;
-    padding: 8px 16px;
-    font-size: 1.5em;
-    cursor: pointer;
-    font-weight: bold;
+  background: yellow;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1.5em;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .hero-section {
+
     position: relative;
     background: url("./image/unsplash_omeaHbEFlN4.jpg") no-repeat center center/cover;
     height: 100vh;
@@ -59,62 +76,112 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+  position: relative;
+  background: url("./image/unsplash_omeaHbEFlN4.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
 
 .hero-section .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .hero-section .content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
 }
 
 .hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 .hero-section .highlight {
-    color: yellow;
-    text-transform: uppercase;
+  color: yellow;
+  text-transform: uppercase;
 }
 
 .hero-section p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 .hero-section .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .hero-section .try-now,
 .hero-section .remind-me {
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .hero-section .try-now {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 .hero-section .remind-me {
-    background: yellow;
-    color: black;
+  background: yellow;
+  color: black;
 }
 
 
+@media (min-width: 576px) and (max-width: 768px) {
+  .navbar {
+    nav {
+      ul {
+        li {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #menu{
+    display: flex !important;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+    .navbar {
+      nav {
+        ul {
+          li {
+            display: none;
+          }
+        }
+      }
+    }
+
+    #menu{
+        display:flex !important
+      }
+  }
+
+  @media (min-width: 768px) {
+  
+    #menu{
+        display: none !important;
+    }
+  } 
