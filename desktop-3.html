@@ -10,7 +10,35 @@
     <title>Desktop-3</title>
 </head>
 <body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="admin">
+            <div class="head-text">
+                <img src="./image/Frame 1.png" alt="">
+            </div>
+            <div class="image">
+                <img src="./image/download 1 1.png" alt="...">
+            </div>
+            <img src="./image/Admin.png" alt="">
+        </div>
+        <div class="lists">
+            <ul>
+                <li>DashBoard</li>
+                <li>Student</li>
+                <li>Staff</li>
+                <li>Academics</li>
+                <li>Performance</li>
+                <li>Performance</li>
+                <li>Collect Fees</li>
+                <li>Setup</li>
+                <li>Change Password</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main -->
     <main>
+        <!-- header -->
         <section id="header">
             <div class="searchNav">
                 <input type="text" placeholder='Search...'>
@@ -23,8 +51,36 @@
                 </div>
             </div>
         </section>
+        <!-- homename -->
         <section id="homeName">
             <div class="homeName"><b>Home</b> <i class="fa-solid fa-chevron-right"></i> Students</div>
+        </section>
+        <!-- student page -->
+        <section id="studentsPage">
+            <div class="title">Students</div>
+            <div class="tableWrapper">
+                <div class="tableHeader">
+                    <span class="allStudents"><i class="fa-regular fa-building"></i> All Students</span>
+                    <span class="addStudent"><i class="fa-solid fa-plus"></i> Add Student</span>
+                    <span class="uploadStudents"><i class="fa-solid fa-cloud-arrow-up"></i> Upload Students</span>
+                </div>
+                <div class="table">
+                    <div class="tableTitle">
+                        <div class="registered">
+                            <span class="allStudents"><i class="fa-regular fa-building"></i> Registered Students</span>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="showEnteries">
+                            <span>Show</span>
+                            <select>
+                                <option value="100" disabled selected>100</option>
+                            </select>
+                            <span>enteries</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
     </main>
 </body>
