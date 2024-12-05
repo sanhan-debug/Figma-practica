@@ -168,3 +168,19 @@ main {
         position: static;
     }
 }
+@media (min-width: 0px) and (max-width: 900px){
+    .searchNav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .tableWrapper {
+        .tableHeader {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin: 0 !important;
+            }
+        }
+    }
+    
+}
